@@ -1,0 +1,17 @@
+﻿@Model Employee
+
+<div class="container">
+    <div class="row">
+
+        @foreach (var p in Model)
+        {
+            <div class="col-md-3 col-sm-6">
+                <h3 style="color:forestgreen">@p.Name</h3>
+                <span>@p.Gender</span>
+                <h4>@p.Birthday</h4>
+                <h4>@p.Address</h4>
+                <h4>@p.PhoneNumber</h4>
+            </div>
+        }
+    </div>
+</div>
